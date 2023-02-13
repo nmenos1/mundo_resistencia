@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Mundo Resistencia - Nmenos1 </title>
+    <link rel="shortcut icon" href="img/progressLogo.Darkcopy.png">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167445915-1"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/NMENOS15.json", {onProgress: UnityProgress});
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Open+Sans:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">  </head>
+  <body>
+
+    <div id="placehere"></div>
+    
+ <a href="https://www.nmenos1.xyz/public/" target="_blank"> <img id="logo" src="img/logo2.png"></a>
+
+ <div class="img__wrap">
+  <img class="img__img" id="mundo" src="img/mundo_resistencia.png">
+  <p class="img__description"><br> Nmenos1 presenta en formato de Gameplay su curaduría llamada Mundo resistencia,
+     un parque temático digital que hace oda al contramonumento. Desde la caída de Sebastián de Belalcázar en Popayán,
+      el monumento se convirtió en agenda y lugar de debate en Colombia, en múltiples niveles de profundización, recordándonos 
+      la fragilidad de la memoria,
+       las maleables opiniones públicas y, sobretodo, la poca conciencia por preservar lo vernacular.
+        Bajo este panorama de tensión, se propone esta exposición, 
+        que traslada las tensiones del plano físico al virtual y público,
+        entendiendo el internet como el lugar de debate post-digital por excelencia. </p>
+
+ </div>
+
+ <div class="img__wrap2">
+ <img class="img__img2"  id="artistas" src="img/artistas.png">
+ <p class="img__description2">
+   <br>
+   &nbsp;Marcia Cabrera <br>
+   &nbsp;Juan Caicedo<br>
+   &nbsp;Laura Campaz<br>
+  Sebastián Carrasco y Juan Cortés<br>
+   &nbsp;Los Chonetos<br>
+   &nbsp;Rafael Díaz<br>
+   &nbsp;Raura Oblitas<br>
+   &nbsp;Jose Ruíz<br>
+   &nbsp;Johan Samboni
+ </p>
+</div>
+
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 100%; height: 100%; position:absolute"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Mundo Resistencia - Nmenos1</div>
+      </div>
+    </div>
+
+    <script>
+        if (screen.width <= 500) {
+          document.location = "mundoresistencia.html";
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167445915-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167445915-1');
+    </script>
+  </body>
+</html>

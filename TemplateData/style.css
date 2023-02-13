@@ -1,0 +1,278 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content { width: 100%; height:100%;position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png'); width: 100%;}
+.webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
+
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
+
+#mundo {
+    position:absolute;
+    z-index: 99;
+    margin-left: 50%;
+    width: 15%;
+    margin-top: 20px;
+        font-size: 100%;
+    
+}
+
+/* relevant styles */
+.img__wrap {
+    position: relative;
+    background-color: white;
+
+  }
+  
+  .img__description {
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px;
+    width: 250px;
+    height:  406px;
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    color: blue;
+    font-size: 90%;
+    font-family: 'Titillium Web', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    text-align: left;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+
+  }
+  
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+
+  }
+
+  .img__wrap2 {
+    position: relative;
+    background-color: white;
+
+  }
+  
+  .img__description2 {
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px;
+    width: 200px;
+    height:  226px;
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left: 74%;
+    right: 0;
+    color: blue;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    text-align: justify;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap2:hover .img__description2 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+#artistas {
+    position:absolute;
+    z-index: 99;
+    margin-left: 75%;
+    width: 10%;
+    margin-top: 20px;
+    
+}
+
+#logo {
+    position:absolute;
+    z-index: 99;
+    width: 8%;
+}
+
+
+
+
+#placehere {
+   position:absolute;
+   width: 100%;
+   height: 100%;
+}
+
+
+@media screen and (min-width: 1400px) {
+
+ /* relevant styles */
+.img__wrap {
+  position: relative;
+  background-color: white;
+
+}
+
+.img__description {
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 25px;
+  width: 300px;
+  height:  596px;
+  position: absolute;
+  top:50px;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  color: blue;
+  font-size: 120%;
+  font-family: 'Titillium Web', sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  text-align: left;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  background-color: white;
+  opacity: 1;
+
+}
+
+.img__wrap2 {
+  position: relative;
+  background-color: white;
+
+}
+
+.img__description2 {
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 25px;
+  width: 270px;
+  height:  280px;
+  position: absolute;
+  top:50px;
+  bottom: 0;
+  left: 75%;
+  right: 0;
+  color: blue;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 110%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  text-align: justify;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap2:hover .img__description2 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+}
+
+@media screen and (min-width: 1900px) {
+
+    /* relevant styles */
+.img__wrap {
+    position: relative;
+    background-color: white;
+
+  }
+  
+  .img__description {
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px;
+    width: 400px;
+    height:  706px;
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    color: blue;
+    font-size: 140%;
+    font-family: 'Titillium Web', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    text-align: left;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+
+  }
+  
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+
+  }
+
+  .img__wrap2 {
+    position: relative;
+    background-color: white;
+
+  }
+  
+  .img__description2 {
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px;
+    width: 370px;
+    height:  326px;
+    position: absolute;
+    top:60px;
+    bottom: 0;
+    left: 75%;
+    right: 0;
+    color: blue;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 120%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    text-align: justify;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap2:hover .img__description2 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+}
